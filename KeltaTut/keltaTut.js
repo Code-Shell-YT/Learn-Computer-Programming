@@ -147,7 +147,7 @@ class Tutorial{
 		
 		this.titleName = name;
 		
-		let title = document.createElement("DIV");
+		let title = document.createElement("H1");
 		let txt = document.createTextNode(name);
 		title.appendChild(txt);
 		
@@ -155,6 +155,24 @@ class Tutorial{
 		
 		this.element.appendChild(title);
 		
+	}
+
+	addFooter = (obj = {
+		data:`Tutorial by KeltaKing`,
+		classes:""
+	}) =>{
+		
+		let data = obj.data;
+		let classes = obj.classes + " w3-xxlarge w3-center";
+		
+		let footer = document.createElement("H1");
+		let txt = document.createTextNode(data);
+		footer.appendChild(txt);
+		
+		footer.className = classes;
+		
+		this.element.appendChild(footer);
+
 	}
 	
 	addCode = (obj = {
@@ -259,7 +277,7 @@ class Tutorial{
 		
 		//subtitle setup
 		subTitle.setAttribute("id", "subTitle"+this.topicCount);
-		subTitle.setAttribute("style","font-weight:800");
+		subTitle.setAttribute("style","font-weight:700");
 		subTitle.setAttribute("class", "w3-padding-16 w3-xxlarge")
 		
 		let subTitleTxt = document.createTextNode(this.topicCount+". " + name);
@@ -307,6 +325,17 @@ class Tutorial{
 		
 		this.element.appendChild(section);		
 		
+	}
+
+	addYTVideo = (vals = {
+		name:"untitled",
+		url:"https://www.youtube.com/embed/G_kwX0vyIVQ",
+	}) => {
+
+		let str = `<center><div style='max-width:700px' class='w3-padding-32'><div class='videoWrapper'><iframe width="560" height="349" src=${vals.url} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div></div></center>`;
+		return str
+
 	}
 	
 }
