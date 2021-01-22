@@ -27,7 +27,7 @@ tutorial.addSection({
 
     In order to do that we have to setup the development environment of that C language in our
     PCs.<br><br>
-    <b>How to setup C programming environment?</b><br>
+    <b>How to start programming in C language?</b><br>
     Watch the below video...
     ${ tutorial.addYTVideo({ 
         name:'AR', 
