@@ -31,7 +31,7 @@ tutorial.addSection({
     Watch the below video...
     ${ tutorial.addYTVideo({ 
         name:'AR', 
-        url: ''
+        url: 'https://www.youtube.com/embed/1W_ieaA3evQ'
     }) }
     
     `,
