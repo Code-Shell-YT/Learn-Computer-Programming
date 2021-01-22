@@ -12,8 +12,14 @@ tutorial.addTitle({
 tutorial.addSection({
 
     name:"What is Programming?",
-    content:`According to wikipidia, <br><b>
-    <div class='w3-black w3-round w3-padding w3-margin-top'>Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result or to perform a specific task. With the help of programming languages we can do that.</div></b><br>
+    content:`According to wikipidia, <br>
+    ${
+        tutorial.addBlock({
+            data:`Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result or to perform a specific task. With the help of programming languages we can do that.`,
+            classes:``
+        })
+    }
+    <br>
     This means that the executable applications which you are using like; Google app, Facebook, 
     Instagram, Amoung Us game, YouTube are the executable 
     applications which are developed in programming languages.<br>

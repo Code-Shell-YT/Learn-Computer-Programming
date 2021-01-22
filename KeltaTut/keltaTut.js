@@ -175,6 +175,25 @@ class Tutorial{
 
 	}
 	
+	addBlock = (obj = {
+		data:`lorem ipsium`,
+		classes:""
+	}) => {
+
+		let classes = "w3-round w3-padding w3-margin-top ";
+
+		if(isset(obj.classes)){
+			classes += obj.classes;
+		}
+		else{
+			classes += "w3-black";
+		}
+
+		let str = `<b><div class='w3-round w3-padding w3-margin-top ${ classes }'>${obj.data}</div></b>`;
+		return str		
+
+	}
+
 	addCode = (obj = {
 		code:"-",
 		classes: ""
