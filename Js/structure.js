@@ -118,7 +118,7 @@ tutorial.addSection({
     To understand this concepts more effectively watch the below video.
     ${ tutorial.addYTVideo({ 
         name:'AR', 
-        url: 'https://www.youtube.com/embed/1W_ieaA3evQ'
+        url: 'https://www.youtube.com/embed/iR-ARjjYAiQ'
     }) }
     `,
 
